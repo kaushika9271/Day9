@@ -1,0 +1,27 @@
+interface Sum
+{
+	int  max=100;
+	void show();
+	static void display()
+	{
+		System.out.println("display");
+	}
+}
+
+class Social implements Sum
+{
+	public void show()
+	{
+		System.out.println("showing");
+	}
+}
+
+public class Interface2 {
+
+	public static void main(String[] args) {
+		Sum.display();
+		Social obj1=new Social();
+		obj1.show();
+	}
+
+}
