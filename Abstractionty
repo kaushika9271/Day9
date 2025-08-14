@@ -1,0 +1,27 @@
+abstract class Bike
+{
+	abstract void run();
+}
+class honda extends Bike
+{
+	void run() 
+	{
+		System.out.println("vehicle");
+		
+	}
+	void play()
+	{
+		System.out.println("playing");
+	}
+	
+}
+public class Abstractionty {
+
+	public static void main(String[] args) {
+		Bike obj=new honda();
+		obj.run() ;
+		honda obj1=new honda();
+		obj1.play();
+	}
+
+}
