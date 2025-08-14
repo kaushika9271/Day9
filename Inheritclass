@@ -1,0 +1,29 @@
+interface Animal
+{
+	void sound();
+	default void run()
+	{
+		System.out.println("running");
+	}
+	static void eat()
+	{
+		System.out.println("eating");
+	}
+}
+class Dog implements Animal
+{
+	public void sound()
+	{
+		System.out.println("Boow");
+	}
+}
+public class Inheritclass {
+
+	public static void main(String[] args) {
+		Dog obj=new Dog();
+		obj.sound();
+		
+
+	}
+
+}
